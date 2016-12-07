@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- GameTime Klasse einbinden -->
+    <script src="GameTime.js"></script>
+  </head>
+  <body>
+    <!-- DIV-Element wo die Zeit angezeigt werden soll -->
+    <div id="gameTime"></div>
+
+    <!-- Instanz von GameTime anlegen und Timer starten -->
+    <script type="text/javascript">
+
+      /*
+        Instanz von GameTime anlegen
+        Parameter 1 = Startzeit (Stunden)
+        Parameter 2 = Startzeit (Minuten)
+        Parameter 3 = ID vom HTML-Element wo die Zeit angezeigt werden soll
+      */
+      var gameTime = new GameTime(10,0, "gameTime");
+      // Automatische Aktualisierung der Zeit starten
+      gameTime.startTime();
+
+    </script>
+  </body>
+</html>
